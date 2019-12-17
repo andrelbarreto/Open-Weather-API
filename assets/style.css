@@ -1,0 +1,67 @@
+.container {
+    max-width: 100%;
+}
+
+li:hover {
+    background-color: #06a0c7;
+}
+
+
+.card {
+    margin: 7px;
+}
+
+#five-day {
+    color: rgba(245, 245, 245, 0.623);
+    background-color: #3d3de0;
+    padding: 3px;
+}
+
+#Current-Weather {
+    background-color: #ddddddb2;
+    font-size: larger;
+
+}
+
+.navbar-header {
+    color: #ffffff;
+}
+
+h4 {
+    color: whitesmoke;
+}
+
+.list-group {
+    width: 100%;
+}
+
+#Title,.navbar .navbar-default{
+    border-top: 2px dotted blue;
+    border-bottom: 2px dotted blue; 
+    background-image: url("assets/images/weather-forecast-climate.webp");
+}
+
+/* .bg-img {
+    
+    background-image: url("assets/images/weather-forecast-climate.webp");
+  
+    min-height: 180px;
+  
+    
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  
+    
+    position: relative;
+  }
+  
+  
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  } */
+  
+  
+  

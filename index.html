@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <title>Weather Forecast Viewer</title>
+
+  </head>
+
+  <body background="assets/images/darkweather.jpg">
+
+    <nav class="navbar navbar-light justify-content-around top-nav" id="Title">  <!-- style="background-color: #1829c4;"> 
+         <img class="card-img-top" src="assets/images/rainbow.jpg" alt="Card image cap"> -->
+        <a class="navbar-brand navbar-header"><h4> Weather Forecast Viewer Dashboard</h4></a>
+
+    </nav>
+
+   <!-- Container for rows and colums to display information -->
+    <div class="container">
+       
+        <!-- start of row -->
+
+        <div class="row">
+            
+            <!-- create a column as sidebar with the height of the viewport -->
+            <!-- sidebar contains input into which user will type city and list of previous cities searched -->
+            <div class="col-3" style="background: rgba(245, 245, 245, 0.651); height: 100%vh">
+
+                <form class="form-group sidebar">
+                    
+                    <label class="m-6" style="font-weight: bold"> <i class="fas fa-cloud-sun"></i> Please enter U.S. City desired</label>
+
+                    <div class="input-group search-button-group">
+            
+                        <input class="form-control" type="search" placeholder="" id="search">
+                        <button class="btn btn-primary submit-button" type="submit"><span class="fas fa-search-location form-control-feedback"></span></button>
+                    
+                    </div>
+
+                    <img class="card-img-top" src="assets/images/weather-forecast-climate.webp" alt="Card image cap">
+                    <p class= mt-3 style=font-weight:bold>Your previous searches</p>
+                    <div class="card search mx-auto" id="myForm">
+                        
+                        <ul class="list-group list-group-flush">
+
+                        </ul>
+            
+                    </div>
+                   
+                    <!-- Implements a Clear Button that deletes all previous searched cities from local storage -->
+                    <div class="card clear">
+                        <button class="btn btn-primary clear-button" id="Clear-form" onclick="ClearPrevious()" type="clear">Clear List</button>
+                    </div> 
+
+                </form>
+               
+
+            </div>
+
+            <!-- This colum contains all divs to display current weather based on city inputed -->
+
+            <div class="col-9">
+
+                <div class="row">
+
+                    <div class="col-12 my-2">
+                
+                            <p class= mt-3 style=font-weight:bold>Current Weather</p>
+
+                        <div class="card text-center" id="Current-Weather">
+
+                            <div class="card-body city-details">
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-12 my-2">
+
+                        <p class= mt-3 style=font-weight:bold>Your 5 Day Forecast</p>
+                    
+                        <div class="card-group">
+
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+         <!--overall row end  -->
+        </div>
+    
+    <!-- container for all info ends -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- this refers to moment.min.js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script type="text/javascript" src="assets/script.js"></script>
+
+    <!-- linking all libraries used - bootstrap & fontawesome for style, css style file, etc  -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <script>
+    
+    </script>
+
+  </body>
+
+</html>
